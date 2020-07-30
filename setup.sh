@@ -57,3 +57,13 @@ then
 else
   echo "  * Already have fzf"
 fi
+
+echo
+echo '# Setup editor'
+if [ -x "$(command -v code-insiders)" ]
+then
+  git config --global core.editor "code-insiders --wait"
+  echo "  * No code-insiders found"
+else
+  echo "  * No code-insiders found"
+fi
