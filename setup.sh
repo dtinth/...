@@ -40,7 +40,7 @@ then
   if ! [ -e ~/.local/share/omf ]
   then
     curl -L https://get.oh-my.fish > /tmp/omf-installer
-    fish /tmp/omf-installer --path=~/.local/share/omf --config=~/my/omf
+    fish /tmp/omf-installer --path=~/.local/share/omf --config=~/my/omf --noninteractive
   else
     echo "  * Already done."
   fi
