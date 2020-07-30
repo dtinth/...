@@ -28,6 +28,11 @@ then
   fi
 fi
 
+if [ "$(whoami)" = "codespace" ]
+then
+  sudo chsh -s /usr/bin/fish codespace
+fi
+
 echo
 echo '# Setup oh-my-fish'
 if (fish --version | grep 'version 3')
